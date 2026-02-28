@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Notebook App</title>
+    <title>Advanced Notebook App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <h1>My Notebook</h1>
+<div class="container">
+    <h1>My Notebook</h1>
 
-        <textarea id="noteInput" placeholder="Write your note here..."></textarea>
+    <button onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
 
-        <button onclick="addNote()">Save Note</button>
+    <input type="text" id="searchInput" placeholder="Search notes..." onkeyup="searchNotes()">
 
-        <div id="notesContainer"></div>
-    </div>
+    <textarea id="noteInput" placeholder="Write your note here..."></textarea>
+    <button onclick="addNote()">Save Note</button>
 
-    <script src="script.js"></script>
+    <div id="notesContainer"></div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
